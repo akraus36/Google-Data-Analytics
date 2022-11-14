@@ -1,6 +1,8 @@
 # Google-Data-Analytics
 Capstone Project from Google Data Analytics Certification Course
 
+Project was done using RStudio
+
 Title:  Data Analysis of Cyclistic (Using Divvy Data), Converting Casual Riders to Full Members
 
 Link to Powerpoint Presentation Below
