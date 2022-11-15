@@ -1,3 +1,9 @@
+#Load Libraries
+library(lubridate)
+library(tidyverse)
+library(sqldf)
+library(ggplot2)
+
 #Set working directory
 setwd("/users/13313/Documents/Data")
 
@@ -192,8 +198,7 @@ ggplot(data = agg3, aes(x = member_casual, y = number_of_rides, fill = member_ca
 #Members take much more rides than non-members
 
 # Create a csv file that we will visualize in presentation software
+#Note - I ended up using different dataframes in my visualizations.  I wrote this line of code to demonstrate knowledge of how to write csv files to a save location.
 counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
 write.csv(counts, file = '/users/13313/Documents/Data/avg_ride_length.csv')
-
-
 
